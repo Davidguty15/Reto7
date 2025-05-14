@@ -132,3 +132,24 @@ button[type="submit"]:hover{
     /*color de fondo*/
     background-color: rgb(8, 100, 170);
 }
+
+button[type="reset"]{
+    /*color de fondo*/
+    background-color: #f44336;
+    /*color de letra*/
+    color: #fff;
+    /*padding*/
+    padding: 15px 20px;
+    /*borde*/
+    border: none;
+    /*bordes redondeados*/
+    border-radius: 4px;
+    /*cursor*/
+    cursor: pointer;
+    /*Centrar*/
+    text-align: center;
+    /*tamaño de letra*/
+    font-size: 16px;
+    /*transicion*/
+    transition: background-color 0.3s ease;
+}
