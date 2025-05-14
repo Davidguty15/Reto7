@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>
+            Encuesta sobre consumos energeticos
+        </h1>
+    </header>
+
+    <main class="form-container">
+        <form  action="https://formspree.io/..." method="post">
+
+            <fieldset>
+                <legend>Informacion personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
+                <label for="localizacion">Localizacion:</label>
+                <input type="text" id="localizacion" name="localizacion" required placeholder="Ingresa tu localizacion">
+            </fieldset>
+
+            <fieldset>
+                <legend>Consumo Energetico Actual</legend>
+                <label for="Fuente de Energia">Fuente de Energia Utilizadas:</label>
+                <select name="fuente_energia" id="fuente_energia" required>
+                    <option value="solar">Solar</option>
+                    <option value="eolica">Eolica</option>
+                    <option value="hidraulica">Hidraulica</option>
+                    <option value="nuclear">Nuclear</option>
+                    <option value="combustible_fosil">Combustible Fosil</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interes en Energias renovables</legend>
+                <label for="interes">¿Te interesan las energias renovables?</label>
+                <select name="nivel_interes" id="nivel_interes" required>
+                    <option value="alto">Alto</option>
+                    <option value="medio">Medio</option>
+                    <option value="bajo">Bajo</option>
+                </select>
+                
+                <label for="disposicion">Disposicion a adoptar energias renovables </label>
+                <input type="radio" id="yes" name="disposicion" class="radio-label" value="si" required>Si
+                <input type="radio" id="no" name="disposicion"  class="radio-label" value="no" required>No
+
+            </fieldset>
+            <button type="submit">Enviar encuesta</button>
+        </form>
+    </main>    
+</body>
+</html>

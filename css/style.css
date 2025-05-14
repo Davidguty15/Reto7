@@ -1,0 +1,134 @@
+body{
+    /*tipo de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*color de fondo*/
+    background-color: #f0f0f0;
+    /*color de letra*/
+    color: #333;
+    /*margen*/
+    margin: 0;
+    /*padding*/
+    padding: 0;
+    /*alto de linea*/
+    line-height: 1.6;
+    /*display*/
+    display: flex;
+    /*direccion flexible en columnas*/
+    flex-direction: column;
+    /*minimo de alto*/
+    min-height: 100vh;
+}
+
+.header{
+    /*color de fondo*/
+    background-color: rgb(10, 128, 224);
+    /*color de letra*/
+    color: #fff;
+    /*padding*/
+    padding: 20px;
+    /*alinear al centro*/
+    text-align: center;
+}
+
+.form-container{
+    /*flex*/
+    flex: 1;
+    /*margen*/
+    margin: 20px auto;
+    /*padding*/
+    padding: 20px;
+    /*maximo ancho*/
+    max-width: 800px;
+    /*color de fondo*/
+    background-color: #fff;
+    /*sombra*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /*bordes redondeados*/
+    border-radius: 8px;
+}
+
+form fieldset{
+    /*borde, grosor, estilo y color*/
+    border: 2px solid rgb(10, 128, 224);
+    /*bordes redondeados*/
+    border-radius: 8px;
+    /*margen*/
+    margin-bottom: 20px;
+    /*padding*/
+    padding: 20px;
+}
+
+form legend{
+    /*color de letra*/
+    color: rgb(10, 128, 224);
+    /*peso de letra*/
+    font-weight: bold;
+}
+
+label{
+    /*display*/
+    display: block;
+    /*margen*/
+    margin-top: 10px;
+    /*peso de letra*/
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select{
+    /*ancho*/
+    width: 100%;
+    /*padding*/
+    padding: 10px;
+    /*margen*/
+    margin-top: 5px;
+    /*margen inferior*/
+    margin-bottom: 15px;
+    /*borde*/
+    border: 1px solid #ccc;
+    /*bordes redondeados*/
+    border-radius: 4px;
+    /*box-sizing*/
+    box-sizing: border-box;
+}
+
+input[type="radio"]{
+    /*margen*/
+    margin-right: 5px;
+}
+
+input.radio-label{
+    /*display*/
+    display: inline-block;
+    /*margen*/
+    margin-right: 10px;
+    /*alineacion*/
+    align-items: center;
+}
+
+button[type="submit"]{
+    /*color de fondo*/
+    background-color: rgb(10, 128, 224);
+    /*color de letra*/
+    color: #fff;
+    /*padding*/
+    padding: 15px 20px;
+    /*borde*/
+    border: none;
+    /*bordes redondeados*/
+    border-radius: 4px;
+    /*cursor*/
+    cursor: pointer;
+    /*Centrar*/
+    text-align: center;
+    /*tamaño de letra*/
+    font-size: 16px;
+    /*transicion*/
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover{
+    /*color de fondo*/
+    background-color: rgb(8, 100, 170);
+}
